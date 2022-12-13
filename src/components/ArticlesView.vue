@@ -164,10 +164,16 @@ export default {
             const dateCMT = aujourdui.toLocaleDateString('fr-FR', options)
             const commentaire = {
                 contenu : this.contenuCommentaire,
-                pseudo : this.$store.pseudo,
+                pseudo : this.pseudo,
                 dt: dateCMT
             }
-            article.commentaires.push(commentaire)
+            if (this.contenuCommentaire == ""){
+                e.preventDefault()
+            }
+            else{
+                article.commentaires.push(commentaire)
+            }
+            
             fetch("http://localhost:3004/articles/"+article.id, {
                 method: "put", 
                 headers : {"content-type": "application/json"} , 

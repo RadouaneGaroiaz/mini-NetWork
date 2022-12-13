@@ -104,10 +104,11 @@ export default {
     },
 
      homme(e){
-      this.loggedIn = false
+      //this.loggedIn = false
       e.preventDefault()
       
       this.$router.push({ path: '/' })
+      //location.reload();
       this.reloadPage()
     }, 
 
@@ -120,9 +121,10 @@ export default {
     }, 
 
 
-    reloadPage(){
+     reloadPage(){
       this.$forceUpdate();
-    },
+      
+    }, 
     updateparent() {
       if(localStorage.getItem("loggedIn") === "true")
         this.loggedIn = true
