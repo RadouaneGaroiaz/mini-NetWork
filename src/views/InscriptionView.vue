@@ -82,6 +82,9 @@ export default {
             ){
                 document.querySelector('#error').innerHTML="« * champs obligatoires »";
             }
+            else if (this.users.find(user => user.email == this.email)){
+                document.querySelector('#error').innerHTML="L'email est déjà utilisé !";
+            }
             else{
                 const user = {
                     pseudo : this.pseudo,
@@ -89,6 +92,11 @@ export default {
                     password : this.password,
                     urlImgProfil : this.urlImgProfil
                 }
+                fetch("http://localhost:3004/utilisateurs")
+            .then(reponse => reponse.json())
+            .then(data => {
+                this.users = data ; 
+        })
                 fetch("http://localhost:3004/utilisateurs", {
                     method: "post", 
                     headers : {"content-type": "application/json"} , 
@@ -102,7 +110,6 @@ export default {
                 this.password =""
                 this.confirm_password =""
                 this.urlImgProfil =""
-                //document.querySelector('#inscription').innerHTML="L'utilisateur a été bien inscrit !";
                 this.myAlert();
                 this.$router.push('/connexion');
             }
@@ -145,7 +152,7 @@ button,
 input {
   border: 0;
   width: 100%;
-  height: 45px;
+  height: 40px;
   background: transparent;
   font-family: inherit;
   font-size: 16px;

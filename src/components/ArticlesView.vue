@@ -11,13 +11,13 @@
         </form>
     </div>
     <!-- S'il n'ya pas d'articles -->
-    <div v-if="this.$store.articles == undefined ">
+    <div v-if="this.articles == undefined ">
         <h2>Il n'existe pas d'articles pour le moment.</h2>
-        <h2 v-if="!loggedIn">Connectez/Inscrivez-vous et créer vos articles.</h2>
-        <h2 v-if="loggedIn">Créer vos articles.</h2>
+        <h2 v-if="loggedIn === false">Connectez/Inscrivez-vous et créer vos articles.</h2>
+        <h2 v-if="loggedIn === true">Créer vos articles.</h2>
     </div>
     <!-- Les articles -->
-    <div v-for="(article, index) in this.$store.articles " :key="index" :class="post">
+    <div v-for="(article, index) in this.articles " :key="index" :class="post">
         <div class="post">
             <!-- Header de l'article => Nom de l'utilisateur+photo et la date de l'article -->
             <div class="row headerPost float-parent-element">
@@ -119,7 +119,7 @@ export default {
                 contenu : this.contenu,
                 urlImgArticle : this.urlImgArticle,   
                 like : 0,
-                pseudo : this.$store.pseudo,
+                pseudo : this.pseudo,
                 date : dateArticle ,
                 commentaires : [],
                 isLiked : false
@@ -143,7 +143,7 @@ export default {
             
             if (article.isLiked === false) {
                 article.like++;
-                article.isLiked=true
+                
             }
             fetch("http://localhost:3004/articles/"+article.id, {
                 method: "put", 
@@ -154,7 +154,7 @@ export default {
             .then(data => {
                 this.getArticles()              
             })
-            
+            article.isLiked=true
             
         },
         addCommentaire(e,article){
@@ -195,8 +195,8 @@ export default {
             fetch("http://localhost:3004/articles")
             .then(reponse => reponse.json())
             .then(data => {
-                this.$store.articles = data ; 
-                this.$store.articles.forEach(article => {
+                this.articles = data ; 
+                this.articles.forEach(article => {
                     users.forEach(user => {
                         if(article.pseudo == user.pseudo) article.urlImgProfil = user.urlImgProfil
                     });
@@ -209,7 +209,7 @@ export default {
     
   },
   mounted:function(){
-      console.log(this.$store.pseudo);
+      console.log(this.pseudo);
     fetch("http://localhost:3004/utilisateurs")
         .then(reponse => reponse.json())
         .then(data => {
