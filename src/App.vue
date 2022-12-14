@@ -196,7 +196,7 @@ button {
   left: 0;
   width: 72px;
   height: 100%;
-  background: #048480;
+  background: #216ce7;
   transition: width 0.4s;
 }
 

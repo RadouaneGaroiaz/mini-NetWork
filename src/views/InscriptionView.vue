@@ -40,6 +40,9 @@
         <div class="inputs">
                     <span id = "error" style="color:red"> </span>
                 </div>
+                <div class="inputs">
+                    <span id = "message" style="color:red"> </span>
+                </div>
         <p>
           Signed up already?
           <a href="/connexion">Login here</a>
@@ -138,7 +141,7 @@ button,
 input {
   border: 0;
   width: 100%;
-  height: 60px;
+  height: 45px;
   background: transparent;
   font-family: inherit;
   font-size: 16px;

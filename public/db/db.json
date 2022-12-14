@@ -55,6 +55,20 @@
       "password": "hh",
       "urlImgProfil": "",
       "id": 8
+    },
+    {
+      "pseudo": "ff",
+      "email": "ff",
+      "password": "ff",
+      "urlImgProfil": "",
+      "id": 9
+    },
+    {
+      "pseudo": "dd",
+      "email": "dd",
+      "password": "dd",
+      "urlImgProfil": "",
+      "id": 10
     }
   ],
   "articles": [
@@ -108,6 +122,11 @@
         {
           "contenu": "ggg",
           "dt": "mardi 13 décembre 2022 à 17:15:30"
+        },
+        {
+          "contenu": "zzzzzz",
+          "pseudo": "gg",
+          "dt": "mercredi 14 décembre 2022 à 22:45:54"
         }
       ],
       "id": 1,
@@ -209,7 +228,13 @@
       "like": 5,
       "pseudo": "Taha",
       "date": "lundi 5 décembre 2022 à 11:58:41",
-      "commentaires": [],
+      "commentaires": [
+        {
+          "contenu": "bbbbbbbbbbbbbb",
+          "pseudo": "dd",
+          "dt": "mercredi 14 décembre 2022 à 22:59:34"
+        }
+      ],
       "id": 4,
       "urlImgProfil": "https://thispersondoesnotexist.com/image"
     },
