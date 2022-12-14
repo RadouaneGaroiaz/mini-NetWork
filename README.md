@@ -30,7 +30,7 @@ Password :
 dudu49
 ```
 
-### B- probléme d'affichage ??
+### C- probléme d'affichage ??
 
 ```sh
 refresh la page  
