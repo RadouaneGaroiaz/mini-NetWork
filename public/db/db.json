@@ -1,9 +1,9 @@
 {
   "utilisateurs": [
     {
-      "pseudo": "gg",
+      "pseudo": "dudu49",
       "email": "dudu49@gg.com",
-      "password": "gg",
+      "password": "dudu49",
       "urlImgProfil": "",
       "id": 1
     },
@@ -69,6 +69,13 @@
       "password": "dd",
       "urlImgProfil": "",
       "id": 10
+    },
+    {
+      "pseudo": "cc",
+      "email": "cc",
+      "password": "cc",
+      "urlImgProfil": "",
+      "id": 11
     }
   ],
   "articles": [

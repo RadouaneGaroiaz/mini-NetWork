@@ -69,6 +69,9 @@ export default {
         }
     },
     methods:{
+       myAlert() {
+  alert("L'utilisateur a été bien inscrit !");
+},
         inscrire(e){
             e.preventDefault();
             if(this.password != this.confirm_password){
@@ -99,8 +102,9 @@ export default {
                 this.password =""
                 this.confirm_password =""
                 this.urlImgProfil =""
-                document.querySelector('#inscription').innerHTML="L'utilisateur a été bien inscrit !";
-                this.$router.push('/connexion')
+                //document.querySelector('#inscription').innerHTML="L'utilisateur a été bien inscrit !";
+                this.myAlert();
+                this.$router.push('/connexion');
             }
         }
     },

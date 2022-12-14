@@ -1,4 +1,4 @@
-# Eval-VueJS
+# VueJS-Mini-network
 
 
 ## 1- Project Setup
@@ -23,11 +23,17 @@ npm run dev
 
 Email : 
 ```sh
-taha@mail.com
+dudu49@gg.com
 ```
 Password :
 ```sh
-123456
+dudu49
+```
+
+### B- probléme d'affichage ??
+
+```sh
+refresh la page  
 ```
 
 
