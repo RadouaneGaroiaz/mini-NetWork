@@ -1,25 +1,26 @@
 # VueJS-Mini-network
+mini network qui permet de créer un compte et poster, commanter et liker des articles. 
 
 
-## 1- Project Setup
+## Project Setup
 
 ```sh
 npm install
 ```
 
-### A- Start Database
+### Start Database
 
 ```sh
 npm run db
 ```
 
-### B- Start projet
+### Start projet
 
 ```sh
 npm run dev
 ```
 
-### B- Compte de test
+### Compte de test
 
 Email : 
 ```sh
@@ -30,7 +31,7 @@ Password :
 dudu49
 ```
 
-### C- probléme d'affichage ??
+### probléme d'affichage ??
 
 ```sh
 refresh la page  
