@@ -7,7 +7,7 @@
             <textarea class="form-control" placeholder="laisser un nouveau post" name="contenu" v-model="contenu"></textarea>
             <input class="form-control" type="text" placeholder="url de votre image - taille conseillée 1000x200px" name="urlImgArticle"  v-model="urlImgArticle"/>
 
-            <input type="submit" class="btn btn-success" value="Laisser un nouveau post" style="width:100%;margin-bottom:1em;" @click="nouveauArticle" />
+            <input type="submit" class="btn btn-primary" value="Laisser un nouveau post" style="width:100%;margin-bottom:1em;" @click="nouveauArticle" />
         </form>
     </div>
     <!-- S'il n'ya pas d'articles -->
@@ -77,7 +77,7 @@
                     <form>
                         <textarea class="form-control" placeholder="laisser un commentaire" name="contenu" v-model="contenuCommentaire"></textarea>
 
-                        <input type="submit" class="btn btn-outline-success" value="Laisser un commentaire" style="width:100%;margin-bottom:1em;" @click="(e)=>{addCommentaire(e,article)}"/>
+                        <input type="submit" class="btn btn-outline-success" value="Laisser un commentaire" style="width:30%;margin-bottom:1em;" @click="(e)=>{addCommentaire(e,article)}"/>
                     </form>
                 </div>
             </div>
