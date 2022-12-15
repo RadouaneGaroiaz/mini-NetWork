@@ -10,7 +10,7 @@ npm install
 ### A- Start Database
 
 ```sh
-npm run serve
+npm run db
 ```
 
 ### B- Start projet
