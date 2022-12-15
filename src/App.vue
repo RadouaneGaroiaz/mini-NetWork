@@ -98,12 +98,9 @@ export default {
     },
 
      homme(e){
-      //this.loggedIn = false
-      e.preventDefault()
-      
-      this.$router.push({ path: '/' })
+      this.$router.push({ path: '/' });
+      this.reloadPage();
       //location.reload();
-      this.reloadPage()
     }, 
 
     seConnecter(e){
