@@ -11,10 +11,9 @@
         </form>
     </div>
     <!-- S'il n'ya pas d'articles -->
-    <div v-if="this.articles == undefined ">
+    <div v-if="this.articles == undefined">
         <h2>Il n'existe pas d'articles pour le moment.</h2>
-        <h2 v-if="loggedIn === false">Connectez/Inscrivez-vous et créer vos articles.</h2>
-        <h2 v-if="loggedIn === true">Créer vos articles.</h2>
+       
     </div>
     <!-- Les articles -->
     <div v-for="(article, index) in this.articles " :key="index" :class="post">
@@ -39,7 +38,7 @@
             <div class="row contenuPost">
                 {{article.contenu}}
             </div>
-            <!-- Nombre de commentaire et Like => possibilité de LIKER si l'utilisateur est connecté -->
+            <!-- Nombre de commentaire et Like => possibilité de LIKER un post une seul fois si l'utilisateur est connecté -->
             <div class="row action float-parent-element">
                 <div class="float-child-element"><i class="fa-regular fa-comment"><span class="nb nbComment">{{article.commentaires.length}}</span></i></div>
                 <div class="float-child-element">
