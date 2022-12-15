@@ -122,7 +122,7 @@ export default {
                 pseudo : this.pseudo,
                 date : dateArticle ,
                 commentaires : [],
-                isLiked : false
+                likedBy : []
             }
             fetch("http://localhost:3004/articles", {
                 method: "post", 
@@ -140,11 +140,17 @@ export default {
         },
         like(e,article){
             e.preventDefault()
-            
-            if (article.isLiked === false) {
-                article.like++;
+             if (article.likedBy.includes(this.pseudo)){
+               this.preventDefault();
+            }
+            else{
+                article.like++; 
+                article.likedBy.push(this.pseudo);
+                this.getArticles();
+                this.$forceUpdate();
                 
             }
+        
             fetch("http://localhost:3004/articles/"+article.id, {
                 method: "put", 
                 headers : {"content-type": "application/json"} , 
@@ -154,7 +160,7 @@ export default {
             .then(data => {
                 this.getArticles()              
             })
-            article.isLiked=true
+            
             
         },
         addCommentaire(e,article){
