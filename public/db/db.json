@@ -64,7 +64,13 @@
       "like": 3,
       "pseudo": "test1",
       "date": "jeudi 15 décembre 2022 à 16:17:28",
-      "commentaires": [],
+      "commentaires": [
+        {
+          "contenu": "helllo",
+          "pseudo": "test2",
+          "dt": "jeudi 15 décembre 2022 à 16:23:09"
+        }
+      ],
       "likedBy": [
         "test1",
         "test3",
@@ -94,7 +100,13 @@
       "like": 2,
       "pseudo": "test3",
       "date": "jeudi 15 décembre 2022 à 16:19:08",
-      "commentaires": [],
+      "commentaires": [
+        {
+          "contenu": "hii",
+          "pseudo": "test2",
+          "dt": "jeudi 15 décembre 2022 à 16:23:16"
+        }
+      ],
       "likedBy": [
         "test3",
         "test2"
