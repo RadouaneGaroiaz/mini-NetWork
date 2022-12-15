@@ -104,7 +104,7 @@ export default {
         border-radius: 10% / 50%;
     }
     .nb-like{
-        margin-left:23em;
+        margin-left:-35em;
     }
     .nbComment{
         background-color:green;

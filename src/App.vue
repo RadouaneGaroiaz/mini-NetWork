@@ -1,6 +1,5 @@
 <script setup>
-import { onBeforeUpdate } from '@vue/runtime-core'
-  import { RouterLink, RouterView } from 'vue-router'
+  import { RouterView } from 'vue-router'
 </script>
 
 <template>
@@ -8,7 +7,6 @@ import { onBeforeUpdate } from '@vue/runtime-core'
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Facedook</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,13 +24,9 @@ import { onBeforeUpdate } from '@vue/runtime-core'
             class="sidebar-burger"
             @click="toggleSidebar()"
           ></button>
-          <!-- <img src="./assets/blocklord-logo.png" class="sidebar-logo" /> -->
         </header>
         <nav class="sidebar-nav">
-         <!--  <button type="button" @click="(e) => {homme(e)}" >
-            <img src="./assets/icon-home.svg" />
-            <span>Home</span>
-          </button> -->
+        
           <button type="button" @click="(e) => {homme(e)}">
           
             <img src="./assets/icon-home.svg" />

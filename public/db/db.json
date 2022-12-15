@@ -34,13 +34,20 @@
       "password": "gg",
       "urlImgProfil": "",
       "id": 5
+    },
+    {
+      "pseudo": "yy",
+      "email": "yy",
+      "password": "yy",
+      "urlImgProfil": "",
+      "id": 6
     }
   ],
   "articles": [
     {
       "contenu": "gg",
       "urlImgArticle": "",
-      "like": 3,
+      "like": 4,
       "pseudo": "test1",
       "date": "jeudi 15 décembre 2022 à 16:17:18",
       "commentaires": [
@@ -48,12 +55,23 @@
           "contenu": "gg",
           "pseudo": "test1",
           "dt": "jeudi 15 décembre 2022 à 16:17:22"
+        },
+        {
+          "contenu": "hi",
+          "pseudo": "yy",
+          "dt": "jeudi 15 décembre 2022 à 17:42:38"
+        },
+        {
+          "contenu": "cv",
+          "pseudo": "yy",
+          "dt": "jeudi 15 décembre 2022 à 17:42:46"
         }
       ],
       "likedBy": [
         "test1",
         "test3",
-        "test2"
+        "test2",
+        "yy"
       ],
       "id": 1,
       "urlImgProfil": "https://xsgames.co/randomusers/avatar.php?g=female"
@@ -61,7 +79,7 @@
     {
       "contenu": "yy",
       "urlImgArticle": "",
-      "like": 3,
+      "like": 4,
       "pseudo": "test1",
       "date": "jeudi 15 décembre 2022 à 16:17:28",
       "commentaires": [
@@ -74,7 +92,8 @@
       "likedBy": [
         "test1",
         "test3",
-        "test2"
+        "test2",
+        "yy"
       ],
       "id": 2,
       "urlImgProfil": "https://xsgames.co/randomusers/avatar.php?g=female"
@@ -82,14 +101,21 @@
     {
       "contenu": "post liked by me",
       "urlImgArticle": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "like": 3,
+      "like": 4,
       "pseudo": "test1",
       "date": "jeudi 15 décembre 2022 à 16:18:06",
-      "commentaires": [],
+      "commentaires": [
+        {
+          "contenu": "hi",
+          "pseudo": "yy",
+          "dt": "jeudi 15 décembre 2022 à 17:43:03"
+        }
+      ],
       "likedBy": [
         "test1",
         "test3",
-        "test2"
+        "test2",
+        "yy"
       ],
       "id": 3,
       "urlImgProfil": "https://xsgames.co/randomusers/avatar.php?g=female"
